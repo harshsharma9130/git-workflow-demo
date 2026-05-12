@@ -15,7 +15,5 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Build Step
-        run: |
-        echo "this is the build step"
-        echo "Hello my city is ${{vars.MY_CITY}}"
+        run: echo "Hello my city is ${{vars.MY_CITY}}"
       
