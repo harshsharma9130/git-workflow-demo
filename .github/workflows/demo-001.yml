@@ -5,4 +5,16 @@ on:
       - main
       - develop
       - 'release/*'
+  pull_requests:
+    types: 
+      - opened
+    branches: main
+
+jobs: 
+  build: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Build Step
+        run: echo "this is the build step"
+
       
