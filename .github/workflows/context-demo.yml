@@ -2,7 +2,7 @@ name: context variables demo
 on: 
   workflow_dispatch:
 jobs: 
-  context demo: 
+  context_demo: 
     runs-on: ubuntu-latest
     steps:
       - name: use context variables
