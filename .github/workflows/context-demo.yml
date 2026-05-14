@@ -10,4 +10,9 @@ jobs:
           echo "This workflow is trigerred by ${{ github.actor }}"
           echo "This repo name is ${{ github.repository }}"
           echo "Thos workflow even is trigerred by ${{  github.event_name}}"
+      - name: Dump Github full context
+        env: 
+          Github_Context: ${{ toJson(github) }}
+        run: echo "$Github_Context"
+               
             
