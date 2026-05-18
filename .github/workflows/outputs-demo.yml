@@ -5,9 +5,9 @@ jobs:
   outputs_demo:   
     runs-on: ubuntu latest
     steps:
-    - name: Step One
-    - id: step1
-      run: echo "version=0.0.1" >> $GITHUB_OUTPUT
-    - name: Step Two
-      run: echo "The version declared in step 1 is ${{ steps.step1.outputs.version }}"  
+      - name: Step One  
+      - id: step1
+        run: echo "version=0.0.1" >> $GITHUB_OUTPUT
+      - name: Step Two
+        run: echo "The version declared in step 1 is ${{ steps.step1.outputs.version }}"  
   
