@@ -2,8 +2,9 @@ name: Outputs Demo
 on: workflow_dispatch
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
+  outputs_demo:   
+    runs-on: ubuntu latest
+    steps:
     - name: Step One
     - id: step1
       run: echo "version=0.0.1" >> $GITHUB_OUTPUT
