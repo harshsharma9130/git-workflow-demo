@@ -1,0 +1,17 @@
+name: IF DEMO WORKFLOW
+on: 
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  IF_DEMO:
+    runs-on: ubuntu-latest
+    steps:
+      - name: STEP1
+        if: github.ref=='refs/heads/main' 
+        run: echo "This is a push to main branch"   
+      - name: STEP2
+        if: github.ref=='refs/heads/develop' 
+        run: echo "This is a push to main branch"        
